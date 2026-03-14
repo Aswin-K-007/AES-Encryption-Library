@@ -1,4 +1,5 @@
 encryptor\EncryptedRequest.class
+encryptor\DigiSignUtil.class
 encryptor\HybridCryptoUtil.class
 encryptor\AesUtil.class
 encryptor\RsaKeyLoader.class
