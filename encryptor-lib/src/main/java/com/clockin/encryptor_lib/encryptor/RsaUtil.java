@@ -1,4 +1,4 @@
-package encryptor;
+package com.clockin.encryptor_lib.encryptor;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;

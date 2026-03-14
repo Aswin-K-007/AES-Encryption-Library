@@ -1,4 +1,4 @@
-package encryptor;
+package com.clockin.encryptor_lib.encryptor;
 
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;

@@ -1,4 +1,4 @@
-package encryptor;
+package com.clockin.encryptor_lib.encryptor;
 
 import java.security.PrivateKey;
 import java.security.PublicKey;
@@ -12,7 +12,7 @@ public class DigiSignUtil {
     private static final String SIGN_ALGO = "SHA256withRSA";
 
     // 🔏 Sign Data
-    public String sign(String data, PrivateKey privateKey) throws Exception {
+    public static String sign(String data, PrivateKey privateKey) throws Exception {
 
         Signature signature = Signature.getInstance(SIGN_ALGO);
         signature.initSign(privateKey);
@@ -24,7 +24,7 @@ public class DigiSignUtil {
     }
 
     // 🔍 Verify Signature
-    public boolean verify(String data, String signatureStr, PublicKey publicKey) throws Exception {
+    public static boolean verify(String data, String signatureStr, PublicKey publicKey) throws Exception {
 
         Signature signature = Signature.getInstance(SIGN_ALGO);
         signature.initVerify(publicKey);
