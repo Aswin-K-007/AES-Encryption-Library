@@ -37,7 +37,7 @@ public class HybridCryptoUtil {
     public static String decrypt(EncryptedRequest request, PrivateKey privateKey, PublicKey publicKey) throws Exception {
 
     	boolean validSignature = DigiSignUtil.verify(
-    			request.getData(),
+    			request.getCipherText(),
     			request.getSignature(), 
     			publicKey
     			);
@@ -47,10 +47,10 @@ public class HybridCryptoUtil {
         }
     	
         // 1️⃣ Decrypt AES key
-        SecretKey aesKey = RsaUtil.decryptKey(request.getKey(), privateKey);
+        SecretKey aesKey = RsaUtil.decryptKey(request.getEncryptedKey(), privateKey);
 
         // 2️⃣ Decrypt payload
-        return AesUtil.decrypt(request.getData(), aesKey);
+        return AesUtil.decrypt(request.getCipherText(), aesKey);
     }
 
 }
