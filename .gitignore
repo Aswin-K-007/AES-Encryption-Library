@@ -1,0 +1,78 @@
+# ===============================
+# Maven
+# ===============================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# ===============================
+# Java
+# ===============================
+*.class
+*.log
+*.ctxt
+*.jar
+*.war
+*.ear
+
+# ===============================
+# OS Files
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# IDE - Eclipse
+# ===============================
+.project
+.classpath
+.settings/
+.metadata/
+
+# ===============================
+# IDE - IntelliJ
+# ===============================
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# ===============================
+# IDE - VS Code
+# ===============================
+.vscode/
+
+# ===============================
+# Environment files
+# ===============================
+.env
+.env.*
+
+# ===============================
+# Generated Keys / Certificates
+# ===============================
+*.pem
+*.key
+*.crt
+*.cert
+*.p12
+*.pfx
+
+# ===============================
+# Logs
+# ===============================
+logs/
+*.log
+
+# ===============================
+# Temporary files
+# ===============================
+*.tmp
+*.swp
+*~
