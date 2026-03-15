@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.clockin</groupId>
   <artifactId>aes-encryption-tool</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>0.0.1-SNAPSHOT</version>
   <name>AES Encryption Tool</name>
   <packaging>pom</packaging>
   <description>AES Encryption Key Generator And Encryption Tool</description>
